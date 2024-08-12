@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikael's Page</title>
+    <!-- Include Rainglow CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/rainglow@1.0.0/dist/rainglow.min.css">
+    <style>
+        /* Additional custom styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 20px;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 36px;
+            text-align: center;
+        }
+        h2 {
+            color: #555;
+            font-size: 24px;
+            margin-top: 30px;
+        }
+        p {
+            color: #666;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<h1>This is heading 1 on Mikael's page</h1>
+
+{% for each in data_all %}
+
+    <h2>{{ each.title }}</h2>
+
+    <p>{{ each.description }}</p>
+    {% if each.completed %}}
+
+    <p>Completed</p>
+    
+    {% else %}
+    
+    <p>Not completed</p>
+    {% endif %}
+
+
+{% endfor %}
+
+</body>
+</html>

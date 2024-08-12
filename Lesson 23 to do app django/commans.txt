@@ -1,0 +1,2 @@
+1. we have to start project <django-admin startproject name_of_project>
+2. we have to start application inside the project <python manage.py startapp name_of_app>
