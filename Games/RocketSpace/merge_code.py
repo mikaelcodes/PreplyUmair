@@ -12,9 +12,9 @@ pygame.display.set_caption("Mikael's Rocket Space - MOD SELECTOR")
 clock = pygame.time.Clock()
 
 # Load images
-rocket_img = pygame.transform.scale(pygame.image.load(r"C:\\Users\\mikae\\OneDrive\\Desktop\\PreplyUmair\\Game\\RocketSpace\\images\\rocket.png"), (100, 100))
-enemy_img = pygame.transform.scale(pygame.image.load(r"C:\\Users\\mikae\\OneDrive\\Desktop\\PreplyUmair\\Game\\RocketSpace\\images\\enemy.png"), (50, 50))
-bullet_img = pygame.transform.scale(pygame.image.load(r"C:\\Users\\mikae\\OneDrive\\Desktop\\PreplyUmair\\Game\\RocketSpace\\images\\bullet.png"), (20, 50))
+rocket_img = pygame.transform.scale(pygame.image.load(r"Game\\RocketSpace\\images\\rocket.png"), (100, 100))
+enemy_img = pygame.transform.scale(pygame.image.load(r"Game\\RocketSpace\\images\\enemy.png"), (50, 50))
+bullet_img = pygame.transform.scale(pygame.image.load(r"Game\\RocketSpace\\images\\bullet.png"), (20, 50))
 
 # Fonts
 font = pygame.font.SysFont(None, 40)
