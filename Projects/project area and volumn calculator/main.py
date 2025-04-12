@@ -2,7 +2,7 @@ import tkinter as tk
 
 windows = tk.Tk()
 windows.title("Project Area and Volume Calculator")
-windows.geometry("400x400")
+windows.geometry("450x400")
 
 Label_title = tk.Label(windows, text="Project Area and Volume Calculator", font=("Arial", 14, "bold"))
 Label_title.config(bg="lightblue", fg="black")
@@ -15,6 +15,8 @@ frame_left.pack(side=tk.LEFT, padx=20)
 frame_right = tk.Frame(windows)
 frame_right.pack(side=tk.RIGHT, padx=20)
 
+frame_bottom = tk.Frame(windows)
+frame_bottom.pack(side=tk.BOTTOM, pady=20)
 
 label_area_length = tk.Label(frame_left, text="Area Length:")
 label_area_length.pack(pady=5)
@@ -72,7 +74,9 @@ lable_result_volume = tk.Label(frame_right, text="Volume:")
 lable_result_volume.pack(pady=5)
 
 
-
+label_bottom_text = tk.Label(frame_bottom, text="Developed by Mikael", font=("Arial", 10))
+label_bottom_text.config(bg="lightblue", fg="black")
+label_bottom_text.pack(pady=10)
 
 
 tk.mainloop()
