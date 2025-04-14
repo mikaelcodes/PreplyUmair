@@ -96,8 +96,8 @@ def calculate_total_price():
             label_result.config(text="Invalid quantity!")
             return
     label_result.config(text=f"Total Price: ${total:.2f}")
-    
 
+ 
 
 button_calculate = tk.Button(windows, text="Calculate Total Price", command=calculate_total_price)
 button_calculate.pack(pady=10)
