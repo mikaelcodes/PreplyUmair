@@ -10,11 +10,11 @@ root = pg.display.set_mode((screen_width, screen_height))
 pg.display.set_caption("Mikael's Rocket Space")
 
 # Load and resize the rocket image Game\RocketSpace\images\bullet.png
-rocket = pg.image.load(r"Game\RocketSpace\images\rocket.png")
+rocket = pg.image.load(r"Games\RocketSpace\images\rocket.png")
 rocket = pg.transform.scale(rocket, (100, 100))
 
 # Load and resize the bullet image
-bullet_image = pg.image.load(r"Game\RocketSpace\images\bullet.png")
+bullet_image = pg.image.load(r"Games\RocketSpace\images\bullet.png")
 bullet_image = pg.transform.scale(bullet_image, (20, 50))
 
 # Game variables

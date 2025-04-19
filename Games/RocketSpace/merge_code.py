@@ -12,9 +12,9 @@ pygame.display.set_caption("Mikael's Rocket Space - MOD SELECTOR")
 clock = pygame.time.Clock()
 
 # Load images
-rocket_img = pygame.transform.scale(pygame.image.load(r"Game\\RocketSpace\\images\\rocket.png"), (100, 100))
-enemy_img = pygame.transform.scale(pygame.image.load(r"Game\\RocketSpace\\images\\enemy.png"), (50, 50))
-bullet_img = pygame.transform.scale(pygame.image.load(r"Game\\RocketSpace\\images\\bullet.png"), (20, 50))
+rocket_img = pygame.transform.scale(pygame.image.load(r"Games\RocketSpace\images\rocket.png"), (100, 100))
+enemy_img = pygame.transform.scale(pygame.image.load(r"Games\RocketSpace\images\enemy.png"), (50, 50))
+bullet_img = pygame.transform.scale(pygame.image.load(r"Games\RocketSpace\images\bullet.png"), (20, 50))
 
 # Fonts
 font = pygame.font.SysFont(None, 40)
@@ -43,12 +43,12 @@ def show_mode_menu():
 
 # Difficulty settings per mode
 MODES = [
-    {"name": "Easy", "enemies": 10, "homing": False, "lives": 3, "power_interval": 8000, "enemy_fire": 2},
-    {"name": "Medium", "enemies": 20, "homing": False, "lives": 3, "power_interval": 6000, "enemy_fire": 4},
-    {"name": "Hard", "enemies": 30, "homing": True, "lives": 2, "power_interval": 5000, "enemy_fire": 6},
-    {"name": "Nightmare", "enemies": 40, "homing": True, "lives": 1, "power_interval": 4000, "enemy_fire": 10},
-    {"name": "Hellfire", "enemies": 40, "homing": True, "lives": 1, "power_interval": 2000, "enemy_fire": 20},
-    {"name": "DontEvenTry", "enemies": 50, "homing": True, "lives": 0, "power_interval": 10000, "enemy_fire": 30},
+    {"name": "Easy", "enemies": 10, "homing": False, "lives": 100, "power_interval": 8000, "enemy_fire": 2},
+    {"name": "Medium", "enemies": 20, "homing": False, "lives": 100, "power_interval": 6000, "enemy_fire": 4},
+    {"name": "Hard", "enemies": 30, "homing": True, "lives": 100, "power_interval": 5000, "enemy_fire": 6},
+    {"name": "Nightmare", "enemies": 40, "homing": True, "lives": 100, "power_interval": 4000, "enemy_fire": 10},
+    {"name": "Hellfire", "enemies": 40, "homing": True, "lives": 100, "power_interval": 2000, "enemy_fire": 20},
+    {"name": "DontEvenTry", "enemies": 50, "homing": True, "lives": 100, "power_interval": 10000, "enemy_fire": 30},
 ]
 
 # Run game with selected mode

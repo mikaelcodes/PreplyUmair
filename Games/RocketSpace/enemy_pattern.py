@@ -4,7 +4,7 @@ import random
 class Enemy(pygame.sprite.Sprite):
     def __init__(self, x, y, speed):
         super().__init__()
-        self.image = pygame.image.load(r"C:\Users\mikae\OneDrive\Desktop\PreplyUmair\Game\RocketSpace\images\enemy.png").convert_alpha()
+        self.image = pygame.image.load(r"Games\RocketSpace\images\enemy.png").convert_alpha()
         self.image = pygame.transform.scale(self.image, (50, 50))  # Resize enemy image
         self.rect = self.image.get_rect()
         self.rect.topleft = (x, y)
