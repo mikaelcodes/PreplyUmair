@@ -143,8 +143,8 @@ def run_game(config):
                 pygame.quit()
                 exit()
 
-        if not game_over and keys[pygame.K_SPACE]:
-            if now - last_shot_time > (150 if player.rapid_fire else 400):
+        if not game_over:
+            if keys[pygame.K_SPACE] and now - last_shot_time > (50 if player.rapid_fire else 100):
                 bullet = Bullet(player.rect.centerx, player.rect.top)
                 player_bullets.add(bullet)
                 last_shot_time = now
