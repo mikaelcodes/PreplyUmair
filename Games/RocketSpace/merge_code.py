@@ -2,7 +2,7 @@
 import pygame
 import random
 import math
-
+x = 10
 pygame.init()
 
 # Screen setup
